@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>הזמנת המתכון</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      direction: rtl;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .restaurant-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .restaurant {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .eta {
+      font-size: 14px;
+      color: #888;
+      margin-top: 5px;
+    }
+
+    .details {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .order-btn {
+      background-color: #ff7a00;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    .order-btn:hover {
+      background-color: #e06600;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>להזמנת המתכון במסעדות שבסביבתך</h2>
+
+  <div class="restaurant-list">
+
+    <!-- מסעדה 1 -->
+    <div class="restaurant">
+      <div class="info">
+        <div class="name"> Fratelli  </div>
+        <div class="eta">זמן הגעה משוער: 25 דקות</div>
+      </div>
+      <div class="details">
+        <div class="price">₪86</div>
+        <button class="order-btn">הזמן</button>
+      </div>
+    </div>
+
+    <!-- מסעדה 2 -->
+    <div class="restaurant">
+      <div class="info">
+        <div class="name"> Jony Forno</div>
+        <div class="eta">זמן הגעה משוער: 18 דקות</div>
+      </div>
+      <div class="details">
+        <div class="price">₪82</div>
+        <button class="order-btn">הזמן</button>
+      </div>
+    </div>
+
+    <!-- מסעדה 3 -->
+    <div class="restaurant">
+      <div class="info">
+        <div class="name">Joya </div>
+        <div class="eta">זמן הגעה משוער: 40 דקות</div>
+      </div>
+      <div class="details">
+        <div class="price">₪69</div>
+        <button class="order-btn">הזמן</button>
+      </div>
+    </div>
+
+    <!-- מסעדה 4 -->
+    <div class="restaurant">
+      <div class="info">
+        <div class="name">Buon Gusto</div>
+        <div class="eta">זמן הגעה משוער: 32 דקות</div>
+      </div>
+      <div class="details">
+        <div class="price">₪72</div>
+        <button class="order-btn">הזמן</button>
+      </div>
+    </div>
+
+    <!-- מסעדה 5 -->
+    <div class="restaurant">
+      <div class="info">
+        <div class="name">Café Café</div>
+        <div class="eta">זמן הגעה משוער: 22 דקות</div>
+      </div>
+      <div class="details">
+        <div class="price">₪68</div>
+        <button class="order-btn">הזמן</button>
+      </div>
+    </div>
+
+    <!-- מסעדה 6 -->
+    <div class="restaurant">
+      <div class="info">
+        <div class="name">Vivino </div>
+        <div class="eta">זמן הגעה משוער: 45 דקות</div>
+      </div>
+      <div class="details">
+        <div class="price">₪96</div>
+        <button class="order-btn">הזמן</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

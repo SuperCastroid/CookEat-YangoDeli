@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>פסטה רוזה</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background-color: #fff8f0;
+      direction: rtl;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #recipe-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 40px;
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .ingredients, .instructions {
+      width: 45%;
+      background-color: #f3f3f3;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .ingredients ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .ingredients li {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+    }
+
+    .instructions .step {
+      margin-bottom: 20px;
+    }
+
+    .instructions .step-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .bottom-section {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .bottom-section label {
+      font-size: 18px;
+      margin-left: 10px;
+    }
+
+    .bottom-section input[type="number"] {
+      width: 60px;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    .bottom-section button {
+      margin-top: 20px;
+      background-color: orange;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .bottom-section button:hover {
+      background-color: darkorange;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>פסטה רוזה</h1>
+  <img id="recipe-image" src="pasta roze CookEat.png" alt="תמונה של פסטה רוזה">
+
+  <div class="container">
+    <div class="ingredients">
+      <h2>מצרכים</h2>
+      <ul id="ingredients-list">
+        <li><span>פסטה</span><span class="amount" data-base="500">500 גרם</span></li>
+        <li><span>שמנת לבישול</span><span class="amount" data-base="300">300 מ"ל</span></li>
+        <li><span>חמאה</span><span class="amount" data-base="30">30 גרם</span></li>
+        <li><span>שום</span><span class="amount" data-base="20">20 גרם</span></li>
+        <li><span>בצל סגול</span><span class="amount" data-base="1">1 יחידה</span></li>
+        <li><span>עגבניות מרוסקות</span><span class="amount" data-base="400">400 גרם</span></li>
+        <li><span>רסק עגבניות</span><span class="amount" data-base="200">200 גרם</span></li>
+        <li><span>בזיליקום</span><span class="amount" data-base="30">30 גרם</span></li>
+        <li><span>גבינת פרמזן</span><span class="amount" data-base="50">50 גרם</span></li>
+        <li><span>מלח</span><span class="amount" data-base="5">5 גרם</span></li>
+        <li><span>סוכר לבן</span><span class="amount" data-base="10">10 גרם</span></li>
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>אופן ההכנה</h2>
+      <div class="step">
+        <div class="step-title">1. בישול הפסטה</div>
+        <div>מבשלים את הפסטה בסיר גדול עם מים רותחים ומעט מלח, עד שהיא רכה אך עדיין מעט נגיסה. מסננים ושומרים בצד.</div>
+      </div>
+      <div class="step">
+        <div class="step-title">2. הכנת הבסיס לרוטב</div>
+        <div>מחממים חמאה במחבת גדולה. מוסיפים את השום הקצוץ והבצל הסגול הקצוץ, ומטגנים עד שהבצל מתרכך ומשחים מעט.</div>
+      </div>
+      <div class="step">
+        <div class="step-title">3. שילוב העגבניות והתיבול</div>
+        <div>מוסיפים את רסק העגבניות והעגבניות המרוסקות למחבת. מבשלים 5–7 דקות תוך כדי ערבוב, מוסיפים מלח, סוכר, ובזיליקום.</div>
+      </div>
+      <div class="step">
+        <div class="step-title">4. הוספת השמנת וסיום הרוטב</div>
+        <div>שופכים את השמנת למחבת, מערבבים היטב ומבשלים עוד 2–3 דקות עד שהרוטב מסמיך. מתקנים תיבול לפי הצורך.</div>
+      </div>
+      <div class="step">
+        <div class="step-title">5. שילוב הפסטה</div>
+        <div>מוסיפים את הפסטה המבושלת לרוטב, מערבבים היטב עד שכל הפסטה מצופה. מבשלים יחד 1–2 דקות נוספות.</div>
+      </div>
+      <div class="step">
+        <div class="step-title">6. הגשה</div>
+        <div>מגישים חם עם גבינת פרמזן מעל. ניתן להוסיף עלי בזיליקום טריים לקישוט.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-section">
+    <label for="guests">כמות סועדים:</label>
+    <input type="number" id="guests" name="guests" min="1" value="1">
+    <br>
+    <button onclick="window.location.href='shopping cart.png'">מעבר לסל הקניות</button>
+  </div>
+
+  <script>
+    const guestsInput = document.getElementById("guests");
+    const amounts = document.querySelectorAll(".amount");
+
+    function updateAmounts() {
+      const guests = parseFloat(guestsInput.value);
+      amounts.forEach(el => {
+        const base = parseFloat(el.dataset.base);
+        if (isNaN(base)) return;
+
+        const fullText = el.textContent;
+        const unitMatch = fullText.match(/[^\d\s.¼½]+.*/); // תופס את היחידה והטקסט
+        const unit = unitMatch ? unitMatch[0].trim() : '';
+
+        let newAmount = base * guests;
+
+        // עיגול נעים לקריאה
+        if (newAmount < 1 && newAmount > 0.24) {
+          newAmount = '½';
+        } else if (newAmount <= 0.25) {
+          newAmount = '¼';
+        } else {
+          newAmount = Number.isInteger(newAmount) ? newAmount : newAmount.toFixed(1);
+        }
+
+        el.textContent = `${newAmount} ${unit}`;
+      });
+    }
+
+    guestsInput.addEventListener("input", updateAmounts);
+  </script>
+
+</body>
+</html>
+
+
